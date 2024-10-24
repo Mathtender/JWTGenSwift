@@ -21,10 +21,6 @@ enum JWTSignature {
         let secKeyAlgorithm: SecKeyAlgorithm
 
         switch algorithm {
-        case .RS1:
-            secKeyAlgorithm = .rsaSignatureMessagePKCS1v15SHA1
-        case .RS224:
-            secKeyAlgorithm = .rsaSignatureMessagePKCS1v15SHA224
         case .RS256:
             secKeyAlgorithm = .rsaSignatureMessagePKCS1v15SHA256
         case .RS384:
